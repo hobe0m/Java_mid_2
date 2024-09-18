@@ -11,4 +11,7 @@ public class RawTypeMain {
         System.out.println("result = " + result);
     }
     // 즉, Raw Type은 다이아몬드를 생략했을 때, Object 타입이 자동으로 들어간다는 것과 같다.
+    // 제네릭이 자바의 처음부터 있었던 것이 아니라 제네릭이 없던 시절과 과거 코드의 호환이 필요했기 때문에 어쩔 수 없이 로 타입을 지원한다.
+
+    // 정리하면 로 타입은 사용하지 않아야 하고, 만약 Object를 사용해야 한다면 다이아몬드 안에 Object를 넣어주면 된다.
 }
