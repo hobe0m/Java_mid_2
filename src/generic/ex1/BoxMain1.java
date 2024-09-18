@@ -4,7 +4,7 @@ public class BoxMain1 {
 
     public static void main(String[] args) {
         IntegerBox integerBox = new IntegerBox();
-        integerBox.set(10);
+        integerBox.set(10); // 오토 박싱
         Integer integer = integerBox.get();
         System.out.println("integer = " + integer);
 
@@ -19,5 +19,6 @@ public class BoxMain1 {
     // 다음으로 문자열을 보관하는 StringBox를 생성하고 그 곳에 문자열 "hello"를 보관하고, 꺼내서 출력했다.
 
     // 이후에 더 다양한 타입을 담는 박스가 필요하면 박스 클래스를 계속 만들어야 하는 불편함이 있다.
+    // 코드는 같은데 타입만 다른 박스들이 필요해지니까 제네릭을 사용한다.
     // 따라서 제네릭이 등장했다.
 }
