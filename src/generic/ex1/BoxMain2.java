@@ -3,20 +3,28 @@ package generic.ex1;
 public class BoxMain2 {
 
     public static void main(String[] args) {
+        // 변수 클릭 후 shift + F6를 누르면 rename으로 모든 변수의 이름을 한번에 바꿀 수 있다.
         ObjectBox integerBox = new ObjectBox();
         integerBox.set(10);
-        Integer integer = (Integer) integerBox.get(); // Object를 Integer로 캐스팅
+        // ctrl + alt + shift + t : 빠른 리팩토링
+        // 빠른 리팩토링에서 Inline Variable, Field Variable을 통해 변수와 필드를 인라인한다.
+        // 즉, 하나로 합치고 싶은 부분을 여기서는 Inline Variable을 통해 합쳤다.
+
+        // Object integerBox = objectBox.get();
+        // Integer integer = (Integer) integerBox;
+
+        Integer integer = (Integer) integerBox.get(); // Object를 Integer로 다운 캐스팅
         System.out.println("integer = " + integer);
 
         ObjectBox stringBox = new ObjectBox();
         stringBox.set("hello");
-        String str = (String) stringBox.get(); // Object를 String으로 캐스팅
+        String str = (String) stringBox.get(); // Object를 String으로 다운 캐스팅
         System.out.println("str = " + str);
 
-        // 잘못된 타입의 인수 전달 시
-        integerBox.set("문자100");
-        Integer result = (Integer) integerBox.get(); // String -> Integer 캐스팅 예외
-        System.out.println("result = " + result);
+        // 잘못된 타입의 인수 전달 시(숫자가 들어가길 기대했지만, 문자가 들어갔을 경우)
+        // integerBox.set("문자 100");
+        // Integer result = (Integer) integerBox.get(); // String -> Integer 캐스팅 예외(캐스팅이 잘못됨)
+        // System.out.println("result = " + result); // 오류 발생
     }
     // 이렇게 보면 잘 동작하는 것 같지만, 몇 가지 문제가 있다.
 

@@ -1,6 +1,8 @@
 package generic.ex1;
 
 public class ObjectBox {
+    // 모든 데이터 타입을 보관할 수 있는 ObjectBox 생성
+    // 모든 타입의 부모이므로 다형성을 통해 박스가 많아지는 문제를 해결
 
     private Object value;
 
