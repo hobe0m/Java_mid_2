@@ -6,4 +6,12 @@ public class Node {
     public Node(Object item) {
         this.item = item;
     }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "item=" + item +
+                ", next=" + next +
+                '}';
+    }
 }
