@@ -1,6 +1,5 @@
 package collection.utils;
 
-import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
