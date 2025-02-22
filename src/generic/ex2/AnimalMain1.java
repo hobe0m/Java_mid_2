@@ -25,6 +25,8 @@ public class AnimalMain1 {
         Animal findAnimal = animalBox.get();
         System.out.println("findAnimal = " + findAnimal);
 
+        // toString의 결과가 Animal : 로 나오는 이유는 Dog, Cat에는 toString이 없고 Animal에 있는 toString을 사용하기 때문이다.
+
         // Box 제네릭 클래스에 각각의 타입에 맞는 동물들을 보관하고 꺼낸다.
         // Box<Dog> dogBox : Dog 타입을 보관할 수 있다.
         // Box<Cat> catBox : Cat 타입을 보관할 수 있다.
