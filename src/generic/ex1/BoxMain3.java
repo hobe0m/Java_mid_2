@@ -4,6 +4,7 @@ public class BoxMain3 {
 
     public static void main(String[] args) {
         // 제네릭 클래스 사용
+        // 원하는 모든 타입 사용 가능
 
         GenericBox<Integer> integerBox = new GenericBox<Integer>(); // 생성 시점에서 T의 타입 결정, 여기서는 Integer
         integerBox.set(10);
