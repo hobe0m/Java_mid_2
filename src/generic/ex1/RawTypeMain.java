@@ -2,6 +2,7 @@ package generic.ex1;
 
 public class RawTypeMain {
     // 로 타입(RawType), 원시 타입
+    // 제네릭의 타입 매개변수에는 기본형 사용 불가, 래퍼 클래스만 사용 가능
     public static void main(String[] args) {
         GenericBox integerBox = new GenericBox(); // 다이아몬드를 빼고 제네릭 만들기
         // GenericBox<Object> integerBox = new GenericBox<>(); 이 코드와 동일하다고 보면 된다.
