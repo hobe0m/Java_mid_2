@@ -6,18 +6,18 @@ public class BoxMain3 {
         // 제네릭 클래스 사용
         // 원하는 모든 타입 사용 가능
 
-        GenericBox<Integer> integerBox = new GenericBox<Integer>(); // 생성 시점에서 T의 타입 결정, 여기서는 Integer
+        GenericBox<Integer> integerBox = new GenericBox<>(); // 생성 시점에서 T의 타입 결정, 여기서는 Integer
         integerBox.set(10);
         // integerBox.set("문자100"); Integer 타입만 허용하므로, 컴파일 오류 발생 : Generic을 사용해서 얻을 수 있는 효과
         Integer integer = integerBox.get(); // Integer 타입 변환 (캐스팅 X) : Generic을 사용해서 얻을 수 있는 효과
         System.out.println("integer = " + integer);
 
-        GenericBox<String> stringBox = new GenericBox<String>(); // 생성 시점에서 T의 타입 결정, 여기서는 String
+        GenericBox<String> stringBox = new GenericBox<>(); // 생성 시점에서 T의 타입 결정, 여기서는 String
         stringBox.set("hello"); // String 타입만 허용
         String str = stringBox.get(); // String 타입만 반환
         System.out.println("str = " + str);
 
-        GenericBox<Double> doubleBox = new GenericBox<Double>(); // 생성 시점에서 T의 타입 결정, 여기서는 Double
+        GenericBox<Double> doubleBox = new GenericBox<>(); // 생성 시점에서 T의 타입 결정, 여기서는 Double
         doubleBox.set(10.5); // Double 타입만 허용
         Double doubleValue = doubleBox.get(); // Double 타입만 반환
         System.out.println("doubleValue = " + doubleValue);
