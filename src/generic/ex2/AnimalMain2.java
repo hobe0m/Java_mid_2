@@ -13,7 +13,7 @@ public class AnimalMain2 {
         Box<Animal> animalBox = new Box<>();
 
         // Animal이 부모이므로, 하위 타입인 Dog와 Cat도 들어갈 수 있다.
-
+        // Animal 타입을 Dog과 Cat이 상속받고 있으므로 인자로 사용할 수 있다.
         animalBox.set(animal);
         animalBox.set(dog);
         animalBox.set(cat);
