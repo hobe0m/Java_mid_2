@@ -28,4 +28,5 @@ public class AnimalHospitalMainV1 {
         Dog biggerDog = (Dog) dogHospital.getBigger(new Dog("멍멍이2", 200));
         System.out.println("biggerDog = " + biggerDog);
     }
+    // Animal 객체 사용으로 인해 코드 재사용성은 증가하였다.
 }
