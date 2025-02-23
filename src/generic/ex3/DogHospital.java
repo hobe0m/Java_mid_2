@@ -18,6 +18,8 @@ public class DogHospital {
         animal.sound();
     }
 
+    // 또 다른 개와 비교
+    // 다른 강아지가 들어오면 둘 중 큰 강아지를 반환
     public Dog bigger(Dog target) {
         return animal.getSize() > target.getSize() ? animal : target;
     }
