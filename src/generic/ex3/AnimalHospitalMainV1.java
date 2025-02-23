@@ -23,6 +23,7 @@ public class AnimalHospitalMainV1 {
         dogHospital.set(cat); // 매개변수 체크 실패: 컴파일 오류가 발생하지 않음, animal 타입이기 때문에 개 병원에 고양이도 넣을 수 있다.
 
         // 문제2: 개 타입 반환, 캐스팅 필요
+        //  - 실제로는 Dog이 반환되겠지만, 타입은 Animal이기 때문에 다운캐스팅이 필요하다.
         dogHospital.set(dog);
         Dog biggerDog = (Dog) dogHospital.getBigger(new Dog("멍멍이2", 200));
         System.out.println("biggerDog = " + biggerDog);
