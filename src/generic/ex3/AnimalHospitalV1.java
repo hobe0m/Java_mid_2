@@ -2,6 +2,7 @@ package generic.ex3;
 
 import generic.animal.Animal;
 
+// 다형성을 사용한, 코드 재사용성 증대 시도
 public class AnimalHospitalV1 {
 
     private Animal animal;
