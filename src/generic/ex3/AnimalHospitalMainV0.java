@@ -23,6 +23,7 @@ public class AnimalHospitalMainV0 {
         // dogHospital.set(cat); // 다른 타입 입력 시 컴파일 오류 발생
 
         // 문제 2 : 개 타입 변환
+        // bigger 메서드를 사용하여, 새로운 개가 병원에 왔을 때 더 큰 강아지를 반환한다.
         dogHospital.set(dog);
         Dog biggerDog = dogHospital.bigger(new Dog("멍멍이2", 200));
         System.out.println("biggerDog = " + biggerDog);
