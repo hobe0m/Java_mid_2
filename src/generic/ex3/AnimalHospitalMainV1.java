@@ -29,5 +29,7 @@ public class AnimalHospitalMainV1 {
         System.out.println("biggerDog = " + biggerDog);
     }
     // Animal 객체 사용으로 인해 코드 재사용성은 증가하였다.
-
+    // 하지만 타입 안전성은 반대로 떨어진다.
+    //  - Animal은 Dog와 Cat을 둘 다 받을 수 있기 때문에 문제가 생긴다.
+    //  - 따라서 제네릭을 사용해, 코드 재사용성 및 타입 안전성을 증가시킨다.
 }
