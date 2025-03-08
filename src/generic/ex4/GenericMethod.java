@@ -24,6 +24,8 @@ public class GenericMethod {
         System.out.println("generic print: " + t);
         return t;
     }
+
+    // 제네릭 메서드도 타입 매개변수 제한을 사용할 수 있다.
     public static <T extends Number> T numberMethod(T t) {
         System.out.println("bound print: " + t);
         return t;
