@@ -3,6 +3,7 @@ package generic.ex3;
 import generic.animal.Animal;
 
 public class AnimalHospitalV3<T extends Animal> {
+    // T에 extends Animal을 추가하면 Animal 혹은 Animal의 자식들만 사용할 수 있게끔 제한할 수 있다.
     private T animal;
     public void set(T animal) {
         this.animal = animal;
