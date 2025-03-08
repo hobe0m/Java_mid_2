@@ -16,7 +16,8 @@ public class AnimalHospitalV2<T> {
         animal.equals(null);
 
         // 컴파일 오류 발생
-        // System.out.println("동물 이름 : " + animal.getName);
+        // System.out.println("동물 이름 : " + animal.getName());
+        // System.out.println("동물 크기 : " + animal.getSize());
         // animal.sound();
 
         // 현재는 animal이 어떤 타입인지 알 수 없기 때문에 발생한다.
