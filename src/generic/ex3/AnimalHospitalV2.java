@@ -20,6 +20,7 @@ public class AnimalHospitalV2<T> {
         // animal.sound();
 
         // 현재는 animal이 어떤 타입인지 알 수 없기 때문에 발생한다.
+        //  - 따라서 toString(), equals(), hashCode()와 같은 Object의 메서드들만 사용할 수 있다.
     }
 
     public T getBigger(T target) {
