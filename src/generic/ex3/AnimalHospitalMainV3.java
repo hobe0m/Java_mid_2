@@ -23,11 +23,14 @@ public class AnimalHospitalMainV3 {
         catHospital.checkup();
 
         // 문제1 해결: 개 병원에 고양이 전달
-        // dogHospital.set(cat); // 다른 타입 입력: 컴파일 오류
+        // dogHospital.set(cat);
+        //  > 다른 타입 입력: 컴파일 오류
 
         // 문제2 해결: 개 타입 반환
         dogHospital.set(dog);
         Dog biggerDog = dogHospital.getBigger(new Dog("멍멍이2", 200));
         System.out.println("biggerDog = " + biggerDog);
     }
+
+    // 타입 매개변수에 입력될 수 있는 상한을 지정(extends X)해서 문제를 해결하였다.
 }
