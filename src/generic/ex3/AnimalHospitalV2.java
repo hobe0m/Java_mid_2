@@ -1,6 +1,5 @@
 package generic.ex3;
 
-import javax.xml.stream.events.StartDocument;
 
 public class AnimalHospitalV2<T> {
 
@@ -19,6 +18,8 @@ public class AnimalHospitalV2<T> {
         // 컴파일 오류 발생
         // System.out.println("동물 이름 : " + animal.getName);
         // animal.sound();
+
+        // 현재는 animal이 어떤 타입인지 알 수 없기 때문에 발생한다.
     }
 
     public T getBigger(T target) {
