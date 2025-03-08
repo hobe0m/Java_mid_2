@@ -5,7 +5,11 @@ public class AnimalHospitalV2<T> {
 
     private T animal;
 
-    public AnimalHospitalV2(T animal) {
+    // public AnimalHospitalV2(T animal) {
+    //    this.animal = animal;
+    // }
+
+    public void set(T animal) {
         this.animal = animal;
     }
 
