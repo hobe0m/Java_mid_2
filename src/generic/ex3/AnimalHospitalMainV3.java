@@ -8,6 +8,9 @@ public class AnimalHospitalMainV3 {
         AnimalHospitalV3<Dog> dogHospital = new AnimalHospitalV3<>();
         AnimalHospitalV3<Cat> catHospital = new AnimalHospitalV3<>();
 
+        // 제한이 있기 때문에, Animal 및 그 자식들을 제외하고는 들어올 수 없다.
+        // AnimalHospitalV3<Integer> integerHospital = new AnimalHospitalV3<>();
+
         Dog dog = new Dog("멍멍이1", 100);
         Cat cat = new Cat("야옹이1", 300);
 
