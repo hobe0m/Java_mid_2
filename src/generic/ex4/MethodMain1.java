@@ -1,8 +1,6 @@
-package generic.ex3;
+package generic.ex4;
 
-import generic.ex4.GenericMethod;
-
-public class GenericMain1 {
+public class MethodMain1 {
     public static void main(String[] args) {
         Integer i = 10;
         Object object = GenericMethod.objMethod(i);
