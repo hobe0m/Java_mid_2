@@ -18,6 +18,9 @@ public class GenericMethod1 {
         Integer integerValue = GenericMethod.<Integer>numberMethod(10);
         Double doubleValue = GenericMethod.<Double>numberMethod(20.0);
 
+        // NumberMethod에는 사용할 수 없다.
+        String stringValue = GenericMethod.<String>genericMethod("HELLO");
+
         // 제네릭 타입 [ GenericClass<T> ]
         //  - 타입 인자 전달 : 객체를 생성하는 시점
 
