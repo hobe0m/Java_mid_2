@@ -5,6 +5,7 @@ import generic.animal.Cat;
 import generic.animal.Dog;
 
 public class WildcardMain2 {
+    // 와일드 카드 하한 지정
     public static void main(String[] args) {
         Box<Object> objBox = new Box<>();
         Box<Animal> animalBox = new Box<>();
@@ -15,12 +16,13 @@ public class WildcardMain2 {
         writeBox(objBox);
         writeBox(animalBox);
 
-        //writeBox(dogBox); // 하한이 Animal
-        //writeBox(catBox); // 하한이 Animal
+        // writeBox(dogBox); // 하한이 Animal
+        // writeBox(catBox); // 하한이 Animal
         Animal animal = animalBox.get();
         System.out.println("animal = " + animal);
     }
 
+    // 메서드에서 super를 사용하므로 animal 자신이거나 animal 보다 높아야 한다.
     static void writeBox(Box<? super Animal> box) {
         box.set(new Dog("멍멍이", 100));
     }
