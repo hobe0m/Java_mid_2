@@ -21,6 +21,13 @@ public class GenericMethod1 {
         // NumberMethod에는 사용할 수 없다.
         String stringValue = GenericMethod.<String>genericMethod("HELLO");
 
+        // 제네릭 메서드의 타입 추론
+        //  > 인자를 확인 및 반환 타입을 가지고 타입 인자를 추론할 수 있다.
+        //  > 따라서 타입 매개변수를 사용하지 않아도 된다.
+        Integer integer1 = GenericMethod.genericMethod(i);
+        Double doubleValue1 = GenericMethod.numberMethod(20.0);
+
+
         // 제네릭 타입 [ GenericClass<T> ]
         //  - 타입 인자 전달 : 객체를 생성하는 시점
 
