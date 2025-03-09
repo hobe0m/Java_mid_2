@@ -24,6 +24,7 @@ public class GenericMethod1 {
         // 제네릭 메서드의 타입 추론
         //  > 인자를 확인 및 반환 타입을 가지고 타입 인자를 추론할 수 있다.
         //  > 따라서 타입 매개변수를 사용하지 않아도 된다.
+        //  > 실제로는 타입 인자가 다 전달되고 있는 것이다.
         Integer integer1 = GenericMethod.genericMethod(i);
         Double doubleValue1 = GenericMethod.numberMethod(20.0);
 
