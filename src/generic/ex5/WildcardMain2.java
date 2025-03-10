@@ -22,7 +22,9 @@ public class WildcardMain2 {
         System.out.println("animal = " + animal);
     }
 
-
+    // 메서드에서 super를 사용하므로 animal 자신이거나 animal 보다 높아야 한다.
+    // ?, 와일드 카드는 Animal 보다 상위에 위치해야 한다.
+    // ?는 Animal의 상위 타입이라는 뜻
     static void writeBox(Box<? super Animal> box) {
         box.set(new Dog("멍멍이", 100));
     }
