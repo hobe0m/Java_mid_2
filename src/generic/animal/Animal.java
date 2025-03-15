@@ -29,5 +29,6 @@ public class Animal {
                 '}';
     }
 
-
+    // 이름(name), 크기(size)를 가지는 부모 클래스이다.
+    // toString()을 IDE(Integrated Development Environment, 즉 인텔리제이에서 지원)를 통해 오버라이딩 헀다.
 }
