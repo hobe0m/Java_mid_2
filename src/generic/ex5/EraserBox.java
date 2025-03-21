@@ -10,13 +10,4 @@ public class EraserBox<T> {
     //     return param instanceof T;
     // }
 
-    // 컴파일 오류 발생
-    //  - 실행 시점에 T는 Object로 변환된다.
-    //  - new T는 항상 new Object가 되어버린다.
-    //  - 개발자가 의도한 것과는 다르다.
-    //   - Dog나 Cat을 만들고 싶지만 Object만 생성된다.
-    //   - 따라서 허용하지 않는다.
-    // public void create() {
-    //     return new T;
-    // }
 }
